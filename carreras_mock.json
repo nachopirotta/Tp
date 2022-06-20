@@ -1,0 +1,9 @@
+[
+    {"millas": "un cuarto", "horario": "19:00", "peso":"1180"},
+    {"millas": "media", "horario": "20:00", "peso":"1180"},
+    {"millas": "una", "horario": "21:00", "peso":"1180"},
+    {"millas": "dos", "horario": "19:00", "peso": "1300"},
+    {"millas": "tres", "horario": "20:00", "peso": "1300"},
+    {"millas": "cuatro", "horario": "21:00", "peso": "1300"}
+
+]

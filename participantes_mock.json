@@ -1,0 +1,19 @@
+
+[
+    {"nombre": "Federico Porco", "auto": "Volkswagen Golf Gti", "dni":"44755402","numero":"5221"},
+    {"nombre": "Ignacio Rodriguez Pirotta", "auto": "Fiat Uno", "dni":"44729626","numero":"5342"},
+    {"nombre": "Guido Zuccoti", "auto": "Chevrolet Corsa", "dni":"44554669","numero":"5523"},
+    {"nombre": "Gianluca Mazzocchi", "auto": "Ford Fiesta", "dni":"44967918","numero":"5864"},
+    {"nombre": "Juan Pedro", "auto": "Chevrolet Camaro", "dni": "44555402", "numero": "5901"},
+    {"nombre": "Diego Martin", "auto": "Fiat Uno", "dni": "42729826", "numero": "5942"},
+    {"nombre": "Dario Martinez", "auto": "Chevrolet prisma", "dni": "41554669", "numero": "5023"},
+    {"nombre": "Matias Gonzalez", "auto": "Fiat 600", "dni": "39967918", "numero": "5004"},
+    {"nombre": "Martin Scarfo", "auto": "Volkswagen Gol", "dni": "38755402", "numero": "5111"},
+    {"nombre": "Juan Cruz Meralles", "auto": "Ford Ka", "dni": "39729626", "numero": "5432"},
+    {"nombre": "Pedro Arrebola", "auto": "Audi S3", "dni": "38754669", "numero": "5888"},
+    {"nombre": "Nicolas Manduca", "auto": "Fiat Duna", "dni": "39767918", "numero": "5777"},
+    {"nombre": "Lucas Carrera", "auto": "Volkswagen Vento", "dni": "36755402", "numero": "5001"},
+    {"nombre": "Matias Watson", "auto": "Volkswagen Bora", "dni": "37729626", "numero": "5002"},
+    {"nombre": "Martin Carrera", "auto": "Volkswagen Tiguan", "dni": "35054669", "numero": "5010"},
+    {"nombre": "Lucas Dorigo", "auto": "Audi A5", "dni": "44467918", "numero": "5802"}
+]
