@@ -10,15 +10,3 @@ class Carreras:
                 'peso': self.peso,
                 }
 
-
-class Carrera_un_cuarto_milla(Carreras):
-    def __init__(self, millas, horario, peso):
-        super().__init__(millas, horario, peso)
-
-class Carrera_media_milla(Carreras):
-    def __init__(self, millas, horario, peso):
-        super().__init__(millas, horario, peso)
-
-class Carrera_una_milla(Carreras):
-    def __init__(self, millas, horario, peso):
-        super().__init__(millas, horario, peso)
