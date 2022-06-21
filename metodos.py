@@ -39,7 +39,7 @@ def carreraGet(carrera):
     return jsonify({"busqueda": carrera, "status": "not found"})
 
 
-@app.route("/api/participante", methods=['POST'])
+@app.route("/participantes", methods=['POST'])
 def participantePost():
    part = request.json
    try:
@@ -62,7 +62,7 @@ def participantePost():
 
    return jsonify(new_participante.serialize())
 
-@app.route("/api/carrera", methods=['POST'])
+@app.route("/carreras", methods=['POST'])
 def carreraPost():
     carrera = request.json
     try:
@@ -85,7 +85,7 @@ def carreraPost():
 
     return jsonify(new_carrera.serialize())
 
-@app.route('/api/participantes/<participante>', methods=['PUT'])
+@app.route('/participantes/<participante>', methods=['PUT'])
 def participantePut(participante):
     body = request.json
     nombre = body["nombre"]
@@ -93,22 +93,22 @@ def participantePut(participante):
     dni = body["dni"]
     numero = body["numero"]
     for indice, p in enumerate(participantes):
-        if p["nombre"] == participante:
+        if p.nombre == participante:
             return jsonify({"participante": {"nombre": nombre, "auto": auto, "dni": dni, "numero": numero},"busqueda": participante, "status": "ok"})
     return jsonify({"busqueda": participante, "status": "not found"})
 
-@app.route('/api/carreras/<carrera>', methods=['PUT'])
+@app.route('/carreras/<carrera>', methods=['PUT'])
 def carreraPut(carrera):
     body = request.json
     millas = body["millas"]
     horario = body["horario"]
     peso = body["peso"]
-    for indice, c in carreras:
-        if c["millas"] == carrera:
+    for indice, c in enumerate(carreras):
+        if c.millas == carrera:
             return jsonify({"carrera": {"millas": millas, "horario": horario, "peso": peso},"busqueda": carrera, "status": "ok"})
     return jsonify({"busqueda": carrera, "status": "not found"})
 
-@app.route('/delete/participantes/<participante>', methods=['DELETE'])
+@app.route('/participantes/<participante>', methods=['DELETE'])
 def participanteDelete(participante):
     for indice, p in enumerate(participantes1):
         if p["nombre"] == participante:
@@ -116,7 +116,7 @@ def participanteDelete(participante):
             return jsonify({"participante": p,"busqueda": participante, "status": "ok"})
     return jsonify({"participantes": participantes1, "status": "not found"})
 
-@app.route('/delete/carreras/<carrera>', methods=['DELETE'])
+@app.route('/carreras/<carrera>', methods=['DELETE'])
 def carreraDelete(carrera):
     for indice, c in enumerate(carreras1):
         if c["millas"] == carrera:
