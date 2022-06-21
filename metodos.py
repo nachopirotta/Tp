@@ -1,3 +1,4 @@
+
 import json
 from flask import Flask, jsonify, request
 from Tp.src.db.carga_participantes import cargar_participantes
@@ -94,7 +95,7 @@ def participantePut(participante):
     numero = body["numero"]
     for indice, p in enumerate(participantes):
         if p.nombre == participante:
-            return jsonify({"participante": {"nombre": nombre, "auto": auto, "dni": dni, "numero": numero},"busqueda": participante, "status": "ok"})
+            return jsonify({"participante":  {"nombre": nombre, "auto": auto, "dni": dni, "numero": numero},"busqueda": participante, "status": "ok"})
     return jsonify({"busqueda": participante, "status": "not found"})
 
 @app.route('/carreras/<carrera>', methods=['PUT'])
